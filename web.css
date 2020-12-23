@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    background: rgb(230, 230, 230) !important;
+}
+
+div#container {
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    margin: auto;
+    background-size: cover;
+    box-sizing: border-box;
+    background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
+    box-shadow: 0 10px 15px -8px #000;
+}
+
+p.head {
+   margin-top: 0px;
+}
+
+.headSpan1 {
+    margin-right: 80px;
+}
+
+.headSpan2 {
+    margin-left: 80px;
+}
+
+p#capP {
+    font-size: 25px;
+    margin-bottom: -1px;
+}
+
+h1 {
+    position: relative;
+    top: -4px;
+}
+
+
+
+header {
+    text-align: center;
+}
+
+hr {
+    position: relative;
+    top: -8px;
+}
+
+.realign {
+    width: 500px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: -4px;
+    border-bottom: solid 3px #222;
+    display: inline-block;
+}
+
+.spanInfo {
+    font-weight: bold;
+}
+
+.spanRight {
+    margin-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+td.tdBlank {
+    text-align: center;
+    background-color: #ddd;
+}
+
+.resetSection {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.imageRe {
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+}
+
+.imageCircleRL {
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.imageCircle {
+    border-radius: 100%;
+}
+
+.imageedge1 {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.imageedge2 {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#hidepictures, #closeGallery {
+    display: none;
+}
+
+.h4pics {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #6c2726;
+    color: white;
+    border: none;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+button:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+footer {
+    text-align: right;
+}
+
+small {
+    position: relative;
+    top: 40px;
+}
