@@ -16,7 +16,7 @@ div#container {
     line-height: normal;
     max-height: auto;
     padding: 60px;
-    margin: 15px;
+    margin: auto;
     background-size: cover;
     box-sizing: border-box;
     background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
