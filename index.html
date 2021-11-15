@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Joseph website</title>
+        
+        <!-- Local Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        
         <link rel="stylesheet" type="text/css" href="web.css">
         
         <!--[if IE]>
@@ -11,28 +19,45 @@
     
     <body>
         <div id="container">
-            <header>
+            <div class="container ConatainerREAdj">
+                <header>
                     <p id="capP">Close D7, House 3, Old Captain Quarters, Navy Town, Ojo Lagos State.</p>
-                    <p class="head">
-                        <span class="headSpan1">Phone (08035625489)</span>
-                        <span class="headSpan2">E-mail (<a href="https://www.gmail.com">sirboj24@gmail.com</a>).</span>
-                    </p>
+                    <div class="head">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span class="headSpan HeadSpan1">Phone (08035625489)</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="headSpan">E-mail (<a href="https://www.gmail.com">sirboj24@gmail.com</a>).</span>
+                            </div>
+                        </div>
+                    </div>
                 <h1>BAMIDELE OKEHI JOSEPH</h1>
             </header>
             <hr>
 
-            <article>
-                <section class="infos clear">
-                    <div class="left realign">
-                        <h4>Personal Information</h4>
-                            <p class="para"><span class="spanInfo">Marital status:</span><span class="spanRight">Single</span></p>
-                            <p class="para"><span class="spanInfo">Nationality:</span><span class="spanRight">Nigerian</span></p>
-                            <p class="para"><span class="spanInfo">Date of birth:</span><span class="spanRight">December 1st, 1989</span></p>
-                            <p class="para"><span class="spanInfo">State of origin:</span><span class="spanRight">Kogi State</span></p>
-                            <p class="para"><span class="spanInfo">Sex:</span><span class="spanRight">Male</span></p>
+            <article class="ClaArticle">
+                <section class="infos clearB container">
+                    <div class="row MaxTop">
+                        
+                        <div class="col-sm-6 joePixCont">
+                            <img class="right joePix" src="images/Chief.jpg" alt="Joseph picture" height="300" width="300">
+                        </div>
+                        
+                        <div class="left col-sm-6 realign">
+                            <h4>Personal Information</h4>
+                            <div id="InfoCont">
+                                
+                                <p class="para"><span class="spanInfo">Marital status:</span><span class="spanRight">Single</span></p>
+                                <p class="para"><span class="spanInfo">Nationality:</span><span class="spanRight">Nigerian</span></p>
+                                <p class="para"><span class="spanInfo">Date of birth:</span><span class="spanRight">December 1st, 1989</span></p>
+                                <p class="para"><span class="spanInfo">State of origin:</span><span class="spanRight">Kogi State</span></p>
+                                <p class="para"><span class="spanInfo">Sex:</span><span class="spanRight">Male</span></p>
+                            </div>
+                                
+                        </div>
+                    
                     </div>
-
-                    <img class="right" src="images/Chief.jpg" alt="Joseph picture" height="300" width="300">
                 </section>
 
                 <section class="infos">
@@ -45,9 +70,12 @@
                     <p class="para">Creative thinker, a goal achiever, excellent communication and interpersonal skills, team player, excellent leadership strength and high level of integrity.</p>
                 </section>
 
-                <section class="infos">
-                    <h4>Education</h4>
-                    <div>
+                <section class="infos JoinRe">
+                    <div class="row">
+                        <div class="col-sm-0"></div>
+                        <div class="col-sm-12">
+                            <h4>Education</h4>
+                            <div class="tableClass">
                         <table>
                             <tr>
                                 <th>School</th>
@@ -77,46 +105,62 @@
                             </tr>
                         </table>
                     </div>
+                        </div>
+                        <div class="col-sm-0"></div>
+                    </div>
                 </section>
 
                 <section class="infos">
-                    <h4>Work Experience</h4>
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Company</th>
-                                <th>Month/Year</th>
-                                <th>Position</th>
-                                <th>State/LGA</th>
-                            </tr>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <h4>Work Experience</h4>
+                            <div class="tableClass">
+                                <table>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Month/Year</th>
+                                        <th>Position</th>
+                                        <th>State/LGA</th>
+                                    </tr>
 
-                            <tr>
-                                <td class="TDspecial">Metla iConcepts</td>
-                                <td>November/2019 &mdash;</td>
-                                <td>Lift-Elevator Operator/Maintenance Engineer</td>
-                                <td>Lagos/Yaba</td>
-                            </tr>
+                                    <tr>
+                                        <td class="TDspecial">BuzyDev</td>
+                                        <td>October/2021 &mdash;</td>
+                                        <td>Graphic Designer/Front-End Developer</td>
+                                        <td>Lagos/Ajah</td>
+                                    </tr>
 
-                            <tr>
-                                <td class="TDspecial">God Saves Communication</td>
-                                <td>July/2018 &mdash; March2019</td>
-                                <td>Phone/Computer Technical Personnel</td>
-                                <td>Lagos/Ojo</td>
-                            </tr>
+                                    <tr>
+                                        <td class="TDspecial">Metla iConcepts</td>
+                                        <td>November/2019 &mdash;</td>
+                                        <td>Lift-Elevator Operator/Maintenance Engineer</td>
+                                        <td>Lagos/Yaba</td>
+                                    </tr>
 
-                             <tr>
-                                <td class="TDspecial">BOJAY Communication</td>
-                                <td>August/2012 &mdash; June/2019</td>
-                                <td>Phone/Computer Technical Personnel</td>
-                                <td>Lagos/Ojo</td>
-                            </tr>
-                        </table>
+                                    <tr>
+                                        <td class="TDspecial">God Saves Communication</td>
+                                        <td>July/2018 &mdash; March2019</td>
+                                        <td>Phone/Computer Technical Personnel</td>
+                                        <td>Lagos/Ojo</td>
+                                    </tr>
+
+                                     <tr>
+                                        <td class="TDspecial">BOJAY Communication</td>
+                                        <td>August/2012 &mdash; June/2019</td>
+                                        <td>Phone/Computer Technical Personnel</td>
+                                        <td>Lagos/Ojo</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-1"></div>
                     </div>
                 </section>
 
                 <section class="resetSection">
                     <h4>Skills/Attributes</h4>
-                    <p class="para">Proficient in computer, good analytical and communication skills. Versatile with <em>COMPUTER/PHONE ENGINEERING</em> and has undergone <em>HTML, CSS, BOOTSTRAP/W3.CSS, JAVASCRIPT and JQUERY</em> studies.</p>
+                    <p class="para">Proficient in computer, good analytical and communication skills. Versatile with <em>COMPUTER/PHONE ENGINEERING</em> and skilled in <em>HTML, CSS, BOOTSTRAP/W3.CSS, JAVASCRIPT, JQUERY, PHOTOSHOP</em>(Web/Graphic design) and, with an indept knowledge of <b>SEO</b> and <b>CONTENT</b> creation.</p>
                 </section>
 
                 <section class="infos">
@@ -126,34 +170,48 @@
 
                 <section class="resetSection clear">
                     <p id="ref">REFERENCES</p>
-                    <hr>
-                    <div class="left realign">
-                         <p><span class="spanInfo">Name:</span><span class="spanRight">Reuben Aniefiok</span></p>
-                        <p><span class="spanInfo">Position:</span><span class="spanRight">Lead Developer</span></p>
-                        <p><span class="spanInfo">Company:</span><span class="spanRight">mDOC</span></p>
-                        <p><span class="spanInfo">Address:</span><span class="spanRight">CBN Estate, Alakija, Amuwo-Odofin, Lagos State.</span></p>
-                        <p><span class="spanInfo">Tel:</span><span class="spanRight">07064552404</span></p>
-                    </div>
+                            <hr>
+                    <div class="row RefRow">
+                        <div class="col-sm-3">
+                            <div class="left">
+                                 <p><span class="spanInfo">Name:</span><span class="spanRight">Reuben Aniefiok</span></p>
+                                <p><span class="spanInfo">Position:</span><span class="spanRight">Lead Developer</span></p>
+                                <p><span class="spanInfo">Company:</span><span class="spanRight">mDOC</span></p>
+                                <p><span class="spanInfo">Address:</span><span class="spanRight">CBN Estate, Alakija, Amuwo-Odofin, Lagos State.</span></p>
+                                <p><span class="spanInfo">Tel:</span><span class="spanRight">07064552404</span></p>
+                            </div>
 
-                    <div class="right realign adjust">
-                         <p><span class="spanInfo">Name:</span><span class="spanRight">Aminu E. Ezekiel</span></p>
-                        <p><span class="spanInfo">Position:</span><span class="spanRight">Chief Engineer</span></p>
-                        <p><span class="spanInfo">Company:</span><span class="spanRight">ASCO</span></p>
-                        <p><span class="spanInfo">Address:</span><span class="spanRight">Ajaokuta, Kogi State.</span></p>
-                        <p><span class="spanInfo">Tel:</span><span class="spanRight">08035680494</span></p>
+                        </div>
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-3 adjust">
+                            <div class="right">
+                                 <p><span class="spanInfo">Name:</span><span class="spanRight">Aminu E. Ezekiel</span></p>
+                                <p><span class="spanInfo">Position:</span><span class="spanRight">Chief Engineer</span></p>
+                                <p><span class="spanInfo">Company:</span><span class="spanRight">ASCO</span></p>
+                                <p><span class="spanInfo">Address:</span><span class="spanRight">Ajaokuta, Kogi State.</span></p>
+                                <p><span class="spanInfo">Tel:</span><span class="spanRight">08035680494</span></p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </article>
 
-            <aside>
+            <aside class="PixAside">
                 <h4 class="h4pics">Some pictures of me and friends</h4>
-                <div id="hidepicture1" class="clear">
+                <div id="hidepicture1" class="clear row">
+                    
                     <img src="images/onPhone.jpg" class="left imageRe">
                     <img src="images/wisemen.jpg" class="right imageRe">
                     <img src="images/withdBoss.jpg" class="right imageRe">
                     <img src="images/withLap.jpg" class="right imageRe">
                 </div>
-                <button id="openGallery">Click here to view more exciting pictures</button>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <button id="openGallery" class="">Click here to view more exciting pictures</button>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
                 
                 <div id="hidepictures" class="clear">
                     <img src="images/JoeMain.JPG" class="left imageRe imageCircleRL">
@@ -169,14 +227,24 @@
                     <img src="images/joeBarbing.jpg" class="right imageRe imageedge1">
                     <img src="images/withJohn.jpg" class="right imageRe imageedge2">
                 </div>
-                <button id="closeGallery">Click here to close gallery</button>
+                <button id="closeGallery" class="ButtonResize">Click here to close gallery</button>
             </aside>
 
             <footer>
-                <small>&copy; 2020 &mdash; Bamidele Joseph</small>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <small>&copy; 2020 &mdash; Bamidele Joseph</small>
+                    </div>
+                </div>
             </footer>
+            </div>
+            
         </div>
         
+        <!--Local bootstrap JS-->
+        <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="web.js"></script>
     </body>
 </html>
