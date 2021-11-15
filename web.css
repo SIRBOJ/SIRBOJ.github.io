@@ -14,10 +14,11 @@ div#container {
     max-width: 1250px;
     position: absolute;
     line-height: normal;
-    left: 60px;
+    left: 10px;
+    right: 10px;
     max-height: auto;
     padding: 60px;
-    margin: 10px 0 10px 0px;
+    margin: 15px;
     background-size: cover;
     box-sizing: border-box;
     background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
