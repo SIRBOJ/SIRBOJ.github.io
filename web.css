@@ -11,12 +11,13 @@ body {
 }
 
 div#container {
-    max-width: 1250px;
+    max-width: 98%;
     position: absolute;
     line-height: normal;
     max-height: auto;
     padding: 60px;
-    margin: auto;
+    left: 20px;
+    margin: 10px;
     background-size: cover;
     box-sizing: border-box;
     background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
