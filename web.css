@@ -7,21 +7,33 @@ body {
     font-family: sans-serif;
     font-weight: 400px;
     background: rgb(230, 230, 230) !important;
+    position: absolute;
+}
+
+.AbsolutCont {
     position: relative;
+    max-width: 1250px;
+    margin: auto;
+    left: 20px;
 }
 
 div#container {
-    max-width: 98%;
-    position: absolute;
-    line-height: normal;
-    max-height: auto;
-    padding: 60px;
+    width: 99%;
+    position: relative;
     left: 20px;
-    margin: 10px;
+    top: 10px;
+    padding: 40px;
+    margin: auto;
     background-size: cover;
     box-sizing: border-box;
     background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
     box-shadow: 0 10px 15px -8px #000;
+}
+
+.ConatainerREAdj {
+    max-width: 1060px;
+    margin: auto;
+    padding: 0;
 }
 
 .ClaArticle {
@@ -70,7 +82,7 @@ hr {
 .realign {
     width: 500px;
     position: relative;
-    right: -260px;
+    right: -220px;
 }
 
 .joePix {
@@ -82,21 +94,6 @@ hr {
     margin-bottom: 25px;
 }
 
-/*
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.clear::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-*/
 
 .JoinRe {
     margin-bottom: 15px;
@@ -226,57 +223,63 @@ small {
 }
 
 /*MEDIA QUERY*/
-@media screen and (max-width: 1186px) {
-    *{
+@media screen and (max-width: 1150px) {
+    * {
         box-sizing: border-box;
     }
     
-    .realign {
-    width: 500px;
-        position: relative;
-        right: -180px;
-    
-}
-    
-}
-
-@media screen and (max-width: 1029px) and (min-width: 559px) {
-    *{
-        box-sizing: border-box;
-    }
-    
-    .realign {
-    width: 500px;
-        position: relative;
-        left: 90px;
-    
-}
     .ConatainerREAdj {
         position: relative;
-        left: -25px;
-    }
-    
-}
-
-@media screen and (max-width: 558px) and (min-width: 100px) {
-    *{
-        box-sizing: border-box;
+        right: 10px;
+        padding-right: 5px;
     }
     
     .realign {
-        width: 500px;
         position: relative;
-        margin-left: -197px;
-        margin-top: 20px;
-    
+        left: 160px;
+    }
 }
-    
-    .MaxTop {
-        max-width: 100%;
+
+@media screen and (max-width: 903px) {
+    .realign {
+        position: relative;
+        margin-right: 600px;
+    }
 }
+
+@media screen and (max-width: 558px) {
+    .realign {
+        position: relative;
+        left: -15px;
+        top: 5px;
+    }
+    
+    .joePixCont {
+        margin-bottom: 30px;
+    }
     
     .adjust {
+        margin-top: 30px;
+    }
+    
+    div#container {
+    width: 98%;
+    position: relative;
+    left: 2px;
+    top: 10px;
+    padding: 20px;
+    
+}
+    .PixAside {
+        margin-left: 30px;
+    }
+    
+    .PixMe {
         position: relative;
-        top: 15px;
-        
+        left: 10px;
+    }
+    
+    .resetSection {
+        margin-left: 15px;
+    }
 }
