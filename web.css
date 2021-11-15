@@ -258,7 +258,7 @@ small {
     
 }
 
-@media screen and (max-width: 558px) and (min-width: 496px) {
+@media screen and (max-width: 558px) and (min-width: 100px) {
     *{
         box-sizing: border-box;
     }
