@@ -105,6 +105,11 @@ hr {
     position: relative;
 }
 
+.pParEdit {
+    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
 .pPara {
     width: 280px;
     margin-bottom: 15px;
@@ -355,7 +360,30 @@ small {
         float: right;
     }
     
+/*
     .Clearify {
         height: 430px;
     }
+*/
 }
+
+@media screen and (max-width: 593px) and (min-width: 547px) {
+    .Clearify {
+        margin-bottom: -220px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
+
+/*
+@media screen and (max-width: 529px) and (min-width: 521px) {
+    .conUP {
+        position: relative;
+        top: px;
+    }
+}*/
