@@ -1,38 +1,59 @@
 * {
-    box-sizing: ;
+    box-sizing: border-box;
 }
 
 body {
     font-size: 17px;
     font-family: sans-serif;
     font-weight: 400px;
-    background: rgb(230, 230, 230) !important;
-    position: absolute;
+    background: rgb(230, 230, 230) !important;    
 }
+
+.Clearify::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.MainLeft {
+    float: left;
+    margin-left: 15px;
+}
+
+.MainRight {
+    float: right;
+}
+
 
 .AbsolutCont {
     position: relative;
-    max-width: 1250px;
-    margin: auto;
-    left: 20px;
+    max-width: 99%;
+    margin: 0 auto;
+   
 }
 
+.tableClass {
+    max-width: 94.5wv;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+}
+
+
 div#container {
-    width: 99%;
+    width: 98%;
     position: relative;
-    left: 20px;
-    top: 10px;
     padding: 40px;
-    margin: auto;
+    margin: 0 auto;
     background-size: cover;
-    box-sizing: border-box;
     background: rgb(230, 230, 230) url('images/paper-pattern.jpg') top left repeat;
     box-shadow: 0 10px 15px -8px #000;
+    border-bottom: 5px solid red;
 }
 
 .ConatainerREAdj {
-    max-width: 1060px;
-    margin: auto;
+    max-width: 97wv;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -42,7 +63,7 @@ div#container {
 }
 
 .MaxTop {
-    max-width: 1100px;
+    max-width: 98wv;
 }
 
 p.head {
@@ -80,14 +101,29 @@ hr {
 }
 
 .realign {
-    width: 500px;
+    max-width: 290px;
     position: relative;
-    right: -220px;
 }
+
+.pPara {
+    width: 280px;
+    margin-bottom: 15px;
+}
+
+.Restru, .joePixCont {
+    width: 500px !importan;
+}
+
+/*
+.Restru {
+    max-width: 9wv;
+}
+*/
 
 .joePix {
     position: relative;
     left: -15px;
+    display: block;
 }
 
 .clearB {
@@ -122,7 +158,7 @@ h4 {
     max-width: 1100px;
 }
 
-.PixAside, .tableClass {
+.PixAside, {
     max-width: 1100px;
     margin: auto;
 }
@@ -155,9 +191,10 @@ td.tdBlank {
 }
 
 .imageRe {
-    width: 250px;
+    width: 270px;
     height: 323px;
     padding: 5px;
+    margin: auto;
 }
 
 .imageCircleRL {
@@ -192,6 +229,10 @@ td.tdBlank {
     margin: auto;
 }
 
+.RepostBut {
+    margin: auto;
+}
+
 button {
     background: #6c2726;
     color: white;
@@ -200,7 +241,7 @@ button {
     text-transform: uppercase;
     font-size: 18px;
     padding: 20px 30px;
-    width: 100%;
+    max-width: 100%;
 }
 
 button:hover {
@@ -213,13 +254,19 @@ button:active {
     top: 1px;
 }
 
+
+
 footer {
     text-align: right;
-}
+    position: relative;
+    top: 15px;
+    right: -37px;
+    max-width: 100wv;
+    }
 
 small {
     position: relative;
-    top: 40px;
+    top: 30px;
 }
 
 /*MEDIA QUERY*/
@@ -239,24 +286,8 @@ small {
         left: 160px;
     }
 }
-
-@media screen and (max-width: 903px) {
-    .realign {
-        position: relative;
-        margin-right: 600px;
-    }
-}
-
+  
 @media screen and (max-width: 558px) {
-    .realign {
-        position: relative;
-        left: -15px;
-        top: 5px;
-    }
-    
-    .joePixCont {
-        margin-bottom: 30px;
-    }
     
     .adjust {
         margin-top: 30px;
@@ -277,9 +308,54 @@ small {
     .PixMe {
         position: relative;
         left: 10px;
+        max-width: 100wv;
+        margin: auto 0;
     }
     
     .resetSection {
         margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 755px) and (min-width: 620px) {
+    .MainRight {
+        margin-top: 
+    }
+    
+    .Clearify{
+      
+        margin-bottom: 30px;
+    }
+    
+    .joePix {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        position: relative;
+        top: 28px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .joePix {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        position: relative;
+        top: 1px;
+        left: -1px;
+    }
+    
+    .MainRight {
+        float: left;
+    }
+    
+    .MainLeft {
+        float: right;
+    }
+    
+    .Clearify {
+        height: 430px;
     }
 }
